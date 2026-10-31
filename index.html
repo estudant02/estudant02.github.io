@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DY PROJECTS</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #080d16;
+  color: #e5f5ff;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 55px 20px;
+  text-align: center;
+  background: #0d1724;
+  border-bottom: 1px solid #123b50;
+}
+
+header h1 {
+  color: #00d9ff;
+  font-size: 38px;
+  margin: 0;
+}
+
+header p { color: #91a9bb; }
+
+main {
+  max-width: 1000px;
+  margin: 35px auto;
+  padding: 20px;
+}
+
+h2 { color: #00d9ff; }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 18px;
+}
+
+.card {
+  background: #111d2b;
+  border: 1px solid #17465c;
+  border-radius: 12px;
+  padding: 22px;
+  transition: .2s;
+}
+
+.card:hover {
+  border-color: #00d9ff;
+  transform: translateY(-4px);
+}
+
+.card h3 { color: #00d9ff; }
+
+.card p { color: #a8bac9; }
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #71889a;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>DY PROJECTS</h1>
+  <p>HARDWARE • FIRMWARE • PCB • 3D DESIGN</p>
+</header>
+
+<main>
+  <h2>MEUS PROJETOS</h2>
+
+  <div class="projects">
+
+    <div class="card">
+      <h3>RF RADAR DY</h3>
+      <p>Monitoramento de radiofrequência com CC1101 e BW16.</p>
+    </div>
+
+    <div class="card">
+      <h3>CARDPUTER DY</h3>
+      <p>Firmwares, módulos e ferramentas para Cardputer ADV.</p>
+    </div>
+
+    <div class="card">
+      <h3>PCB DESIGN</h3>
+      <p>Esquemas eletrônicos, placas e arquivos Gerber.</p>
+    </div>
+
+    <div class="card">
+      <h3>3D MODELS</h3>
+      <p>Cases, suportes e modelos STL e STEP.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  DY PROJECTS © 2026
+</footer>
+
+</body>
+</html>
