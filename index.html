@@ -1,113 +1,112 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DY PROJECTS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d16">
+  <title>Não há nada por aqui — DY PROJECTS</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080d16;
+      --panel: #101e2c;
+      --line: #20394d;
+      --cyan: #39d9ed;
+      --text: #e5f5ff;
+      --muted: #91a8ba;
+    }
 
-<style>
-* { box-sizing: border-box; }
+    * { box-sizing: border-box; }
 
-body {
-  margin: 0;
-  background: #080d16;
-  color: #e5f5ff;
-  font-family: Arial, sans-serif;
-}
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background:
+        radial-gradient(ellipse at 50% 42%, rgba(24, 91, 112, .19), transparent 48%),
+        var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-header {
-  padding: 55px 20px;
-  text-align: center;
-  background: #0d1724;
-  border-bottom: 1px solid #123b50;
-}
+    main {
+      width: min(100%, 560px);
+      text-align: center;
+      padding: 52px 32px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(16, 30, 44, .78);
+      box-shadow: 0 22px 70px rgba(0, 0, 0, .28);
+    }
 
-header h1 {
-  color: #00d9ff;
-  font-size: 38px;
-  margin: 0;
-}
+    .logo {
+      margin-bottom: 42px;
+      color: var(--cyan);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: .18em;
+    }
 
-header p { color: #91a9bb; }
+    .symbol {
+      width: 92px;
+      height: 92px;
+      margin: 0 auto 28px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(57, 217, 237, .35);
+      border-radius: 50%;
+      color: var(--cyan);
+      background: rgba(57, 217, 237, .06);
+      font-size: 39px;
+      box-shadow: 0 0 38px rgba(57, 217, 237, .08);
+    }
 
-main {
-  max-width: 1000px;
-  margin: 35px auto;
-  padding: 20px;
-}
+    h1 {
+      margin: 0;
+      font-size: clamp(27px, 6vw, 39px);
+      line-height: 1.15;
+      letter-spacing: -.035em;
+    }
 
-h2 { color: #00d9ff; }
+    p {
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.7;
+    }
 
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-  gap: 18px;
-}
+    .rule {
+      width: 46px;
+      height: 2px;
+      margin: 30px auto 0;
+      border-radius: 2px;
+      background: var(--cyan);
+      opacity: .8;
+    }
 
-.card {
-  background: #111d2b;
-  border: 1px solid #17465c;
-  border-radius: 12px;
-  padding: 22px;
-  transition: .2s;
-}
+    footer {
+      margin-top: 38px;
+      color: #637b8e;
+      font-size: 10px;
+      letter-spacing: .16em;
+    }
 
-.card:hover {
-  border-color: #00d9ff;
-  transform: translateY(-4px);
-}
-
-.card h3 { color: #00d9ff; }
-
-.card p { color: #a8bac9; }
-
-footer {
-  text-align: center;
-  padding: 30px;
-  color: #71889a;
-}
-</style>
+    @media (max-width: 480px) {
+      main { padding: 42px 22px; }
+      .logo { margin-bottom: 34px; }
+    }
+  </style>
 </head>
-
 <body>
-
-<header>
-  <h1>DY PROJECTS</h1>
-  <p>HARDWARE • FIRMWARE • PCB • 3D DESIGN</p>
-</header>
-
-<main>
-  <h2>MEUS PROJETOS</h2>
-
-  <div class="projects">
-
-    <div class="card">
-      <h3>RF RADAR DY</h3>
-      <p>Monitoramento de radiofrequência com CC1101 e BW16.</p>
-    </div>
-
-    <div class="card">
-      <h3>CARDPUTER DY</h3>
-      <p>Firmwares, módulos e ferramentas para Cardputer ADV.</p>
-    </div>
-
-    <div class="card">
-      <h3>PCB DESIGN</h3>
-      <p>Esquemas eletrônicos, placas e arquivos Gerber.</p>
-    </div>
-
-    <div class="card">
-      <h3>3D MODELS</h3>
-      <p>Cases, suportes e modelos STL e STEP.</p>
-    </div>
-
-  </div>
-</main>
-
-<footer>
-  DY PROJECTS © 2026
-</footer>
-
+  <main>
+    <div class="logo">DY PROJECTS</div>
+    <div class="symbol" aria-hidden="true">⌁</div>
+    <h1>Não há nada por aqui.</h1>
+    <p>Esta página ainda não tem conteúdo.<br>Volte em breve para conferir as novidades.</p>
+    <div class="rule"></div>
+    <footer>HARDWARE · FIRMWARE · PCB · 3D</footer>
+  </main>
 </body>
 </html>
